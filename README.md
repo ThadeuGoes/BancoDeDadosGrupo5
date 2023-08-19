@@ -41,3 +41,22 @@ quem foi realizado e de quem ele está comprando.
 8. Um pedido pode ter mais de um item de um mesmo produto, de acordo com
 a quantidade disponível em estoque entretanto apenas produtos do mesmo
 vendedor.
+
+Data de entrega: 25/08/2023, 12h
+
+Para a entrega: colocar numa conta do github, compartilhar o link via
+mensagem no discord.
+1. Diagrama ER (depois da normalização) - imagem
+Arquivo com os comandos:
+2. SQL de criação das tabelas (DDL)
+3. SQL de inserção de dados nas tabelas (pelo menos 5 registros em
+cada uma) (DML)
+4. Um comando SQL de atualização em algum registro em uma tabela
+(DML)
+5. Um comando SQL de exclusão de algum registro em uma tabela
+(DML)
+6. 5 SQLs de consulta
+a. Pelo menos 2 com algum tipo de junção
+b. Pelo menos 1 com usando count() e group by()
+c. Uma consulta livre
+d. 1 SQL para construção de nota fiscal

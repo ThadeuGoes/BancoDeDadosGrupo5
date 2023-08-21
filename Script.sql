@@ -16,7 +16,7 @@ CREATE TABLE usuario(
 	Telefone_profissional integer
 );
 CREATE TABLE categoria(
-codigo integer primary key autoincrement not null,
-nome text,
-descricao text
+	codigo integer primary key autoincrement not null,
+	nome text,
+	descricao text
 );

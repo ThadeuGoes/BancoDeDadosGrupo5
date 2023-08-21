@@ -23,8 +23,21 @@ CREATE TABLE categoria(
 
 CREATE TABLE pedido (
 	codigo integer primary key autoincrement not null,
-	codigo_usuario integer
+	codigo_usuario integer,
 	quantidade_pruduto integer not null,
 	data_pedido date not null,
 	foreign key (codigo_usuario) references usuario(codigo)
-)
+);
+CREATE TABLE produto (
+	codigo integer primary key autoincrement not null,
+	codigo_categoria integer,
+	codigo_usuario integer,
+	nome text not null,
+	descricao text,
+	quantidade_em_estoque integer not null,
+	valor_unitario integer not null,
+	codigo_de_venda integer not null,
+	data_de_fabricacao date not null,
+	foreign key (codigo_categoria) references categoria(codigo),
+	foreign key (codigo_usuario) references usuario(codigo)
+);

@@ -41,3 +41,10 @@ CREATE TABLE produto (
 	foreign key (codigo_categoria) references categoria(codigo),
 	foreign key (codigo_usuario) references usuario(codigo)
 );
+CREATE TABLE produto_pedido (
+	codigo integer primary key autoincrement not null,
+	codigo_produto integer,
+	codigo_pedido integer,
+	foreign key (codigo_produto) references produto(codigo),
+	foreign key (codigo_pedido) references pedido(codigo)
+);

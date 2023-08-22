@@ -134,6 +134,26 @@ INSERT into usuario (
 	2422238970
 );
 
+INSERT INTO categoria (
+	nome, 
+	descricao
+) VALUES (
+	"Eletrônicos", 
+	NULL
+), (
+	"Vestuário para animais", 
+	"Coletes de segurança, blusas e outras vestimentas para animais"
+), (
+	"Eletrodomésticos", 
+	NULL
+), (
+	"Calçados", 
+	"Tênis, Botas, Sapatos sociais"
+), (
+	"Música", 
+	"Intrumentos musicais e acessórios"
+);
+
 SELECT * FROM usuario u 
 
 

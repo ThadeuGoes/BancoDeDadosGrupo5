@@ -138,6 +138,7 @@ INSERT into usuario (
 	2422238970
 );
 
+<<<<<<< HEAD
 INSERT INTO categoria  (
 	nome,
 	descricao 
@@ -157,5 +158,33 @@ INSERT INTO categoria  (
 	"Brinquedos",
 	"Tudo para sua diversão"
 );
+=======
+INSERT INTO categoria (
+	nome, 
+	descricao
+) VALUES (
+	"Eletrônicos", 
+	NULL
+), (
+	"Vestuário para animais", 
+	"Coletes de segurança, blusas e outras vestimentas para animais"
+), (
+	"Eletrodomésticos", 
+	NULL
+), (
+	"Calçados", 
+	"Tênis, Botas, Sapatos sociais"
+), (
+	"Música", 
+	"Intrumentos musicais e acessórios"
+);
+
+SELECT * FROM usuario u 
+
+
+
+	
+
+>>>>>>> 3fc46c9bf8c177876edd0f0abb8d041fa7d503fe
 
 alter table pedido rename quantidade_pruduto to quantidade_produto;

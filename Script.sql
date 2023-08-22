@@ -15,11 +15,13 @@ CREATE TABLE usuario(
 	Telefone_pessoal integer not null,
 	Telefone_profissional integer
 );
+
 CREATE TABLE categoria(
 	codigo integer primary key autoincrement not null,
 	nome text,
 	descricao text
 );
+
 CREATE TABLE pedido (
 	codigo integer primary key autoincrement not null,
 	codigo_usuario integer,
@@ -27,6 +29,7 @@ CREATE TABLE pedido (
 	data_pedido date not null,
 	foreign key (codigo_usuario) references usuario(codigo)
 );
+
 CREATE TABLE produto (
 	codigo integer primary key autoincrement not null,
 	codigo_categoria integer,
@@ -40,6 +43,7 @@ CREATE TABLE produto (
 	foreign key (codigo_categoria) references categoria(codigo),
 	foreign key (codigo_usuario) references usuario(codigo)
 );
+
 CREATE TABLE produto_pedido (
 	codigo integer primary key autoincrement not null,
 	codigo_produto integer,
@@ -134,10 +138,24 @@ INSERT into usuario (
 	2422238970
 );
 
-SELECT * FROM usuario u 
+INSERT INTO categoria  (
+	nome,
+	descricao 
+)values(
+	"Diversos",
+	"Produtos que nao encaixam em nenhuma outra categoria"
+),(
+	"Vestimenta",
+	"Roupas e acessorios em geral"
+),(
+	"Eletrodomesticos",
+	"Tudo para o seu lar"
+),(
+	"Aparelhos telefonicos",
+	"Celulares e telefones fixos"
+),(
+	"Brinquedos",
+	"Tudo para sua diversão"
+);
 
-
-
-	
-
-
+alter table pedido rename quantidade_pruduto to quantidade_produto;

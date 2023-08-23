@@ -289,6 +289,29 @@ INSERT INTO pedido (
 "2021-08-16"
 );
 
+INSERT INTO produto_pedido (
+	codigo_produto,
+	codigo_pedido 
+) values (
+	1,
+	2
+	),(
+	2,
+	3
+	),(
+	3,
+	4
+	),(
+	4,
+	5
+	),(
+	5,
+	6
+	),(
+	6,
+	1
+	);
+
 
 
 

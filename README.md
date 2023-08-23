@@ -1,13 +1,15 @@
-*TRABALHO EM GRUPO - DISCIPLINA BANCO DE DADOS - PROFESSORA MALU MONDELLI*
+#  <span style="color: #CCFF00"> TRABALHO EM GRUPO - DISCIPLINA BANCO DE DADOS - PROFESSORA MALU MONDELLI :smile:
 
   Participantes:
-  - Lucas Oliveira
-  - Matheus Barcellos
-  - Pedro Teixeira
-  - Ramon Gall
-  - Thadeu Goes
-  - Thomas Victor
+  * [Lucas Oliveira](https://github.com/LucasGcoe)
+  * [Matheus Barcellos](https://github.com/matheusbarcellosb)
+  * [Pedro Teixeira](https://github.com/PedroTeixeira13)
+  * [Ramon Gall](https://github.com/RGOC12)
+  * [Thadeu Goes](https://github.com/ThadeuGoes)
+  * [Thomas Victor](https://github.com/Thomasten22)
 
+
+### <span style="color: #CCFF00"> DESCRIÇÃO:
 Uma plataforma deseja conectar usuários que estão interessados em comprar e
 vender seus produtos. Para isso precisa de um sistema capaz de realizar o cadastro
 de usuários e o controle de estoque de seus produtos. Sendo assim, a seguir são
@@ -42,7 +44,7 @@ quem foi realizado e de quem ele está comprando.
 a quantidade disponível em estoque entretanto apenas produtos do mesmo
 vendedor.
 
-Data de entrega: 25/08/2023, 12h
+#### :warning: Data de entrega: 25/08/2023, 12h
 
 Para a entrega: colocar numa conta do github, compartilhar o link via
 mensagem no discord.
@@ -55,8 +57,8 @@ cada uma) (DML)
 (DML)
 5. Um comando SQL de exclusão de algum registro em uma tabela
 (DML)
-6. 5 SQLs de consulta
-a. Pelo menos 2 com algum tipo de junção
-b. Pelo menos 1 com usando count() e group by()
-c. Uma consulta livre
-d. 1 SQL para construção de nota fiscal
+6. 5 SQLs de consulta:
+* Pelo menos 2 com algum tipo de junção
+* Pelo menos 1 com usando count() e group by()
+* Uma consulta livre
+* 1 SQL para construção de nota fiscal

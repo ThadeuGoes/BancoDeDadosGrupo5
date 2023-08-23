@@ -185,7 +185,7 @@ drop column codigo_de_venda;--Alter table para remover uma linha desnecessária.
 
 --Inserção de dados na tabela produto
 
-INSERT INTO (
+INSERT INTO produto (
 	codigo_categoria,
 	codigo_usuario,
 	nome,
@@ -193,26 +193,23 @@ INSERT INTO (
 	quantidade_em_estoque,
 	valor_unitario,
 	data_de_fabricacao
-)
-values(
+)values(
 	1,
 	3,
-	'Colete refletivo para galinha unisex'
+	'Colete refletivo para galinha unisex',
 	'Colete refletor para sua galinha / galo não ser atropelado.',
 	2,
 	50.99,
 	'2023-08-22'
-),
-(
+),(
 	2,
 	1,
 	'terno a prova de balas do Jackie Chan',
 	'Para você que presa por estilo e por sua vida.',
 	10,
-	10000.00
+	10000.00,
 	'2002-05-10'
-),
-(
+),(
 	3,
 	2,
 	'Iogurteira top therm',
@@ -220,8 +217,7 @@ values(
 	200,
 	350.00,
 	'1995-08-27'
-),
-(
+),(
 	5,
 	5,
 	'Kit de aviãozinho do Silvio Santos',
@@ -229,8 +225,7 @@ values(
 	4,
 	29.99,
 	'1991-01-15'
-),
-(
+),(
 	4,
 	4,
 	'Ibanana',
@@ -238,32 +233,98 @@ values(
 	1,
 	6000.00,
 	'2023-08-05'
-),
-(
+),(
 	6,
 	6,
 	'Modulador de voz do Silvio Santos',
 	'Quer imitar perfeitamente o nosso querido Silvio Santos, agora você pode.',
 	34,
-	150.00
+	150.00,
 	'2019-04-02'
-),
-(
+),(
 	7,
 	5,
 	'Tenis LeBron exclusive edition Naldo',
 	'Compre o unico tenis LeBron que nem o proprio LeBron tem.',
 	1,
-	100000.00
+	100000.00,
 	'2014-01-30'
-),
-(
+),(
 	8,
 	2,
-	'Coletânea maiores sucessos caneta azul'
-	'Essa coletânea de musicas vai despertar vários sentimentos em você meu caro comprador.'
+	'Coletânea maiores sucessos caneta azul',
+	'Essa coletânea de musicas vai despertar vários sentimentos em você meu caro comprador.',
 	450,
 	9.99,
 	'2023-02-15'
-)
+);
+
+INSERT INTO pedido (
+ 	codigo_usuario,
+	quantidade_produto,
+	data_pedido
+) values(
+6, 
+5,
+"2023-08-22"
+),(
+2,
+8,
+"2023-08-19"
+),(
+1,
+3,
+"2022-07-15"
+),(
+5,
+6,
+"2020-09-20"
+),(
+6,
+4,
+"2019-08-17"
+),(
+3,
+8,
+"2021-08-16"
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -311,8 +311,14 @@ INSERT INTO produto_pedido (
 	6,
 	1
 	);
-
-
+UPDATE usuario 
+	SET nomedeusuario = 'Lucas.Oliveira' 
+	WHERE nomedeusuario = 'LucasOliveira' 
+;
+DELETE FROM pedido 
+	WHERE codigo  = 1
+;
+	
 
 
 

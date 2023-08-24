@@ -311,10 +311,13 @@ INSERT INTO produto_pedido (
 	6,
 	1
 	);
+
+--Update no nome de usuario
 UPDATE usuario 
 	SET nomedeusuario = 'Lucas.Oliveira' 
 	WHERE nomedeusuario = 'LucasOliveira' 
 ;
+-- Delete
 DELETE FROM pedido 
 	WHERE codigo  = 1
 ;
@@ -337,49 +340,37 @@ FROM produto p
 INNER JOIN usuario u ON u.codigo = p.codigo_usuario
 GROUP BY u.nome;
 
-SELECT p.codigo, u.nomedeusuario, p2.nome, p2.valor_unitario, p.quantidade_produto, p.quantidade_produto * p2.valor_unitario
+--Listagem de comprador e vendedor
+SELECT p.codigo_usuario as cod_comprador,
+        u.nome as comprador,
+        pr.nome,
+    p.data_pedido,
+    pr.codigo_usuario as cod_vendedor, 
+    u2.nome 
+FROM usuario u
+INNER JOIN pedido p  on p.codigo_usuario = u.codigo
+INNER JOIN produto_pedido pp on pp.codigo_pedido = p.codigo 
+INNER JOIN produto pr on pr.codigo = pp.codigo_produto 
+INNER JOIN usuario u2 on u2.codigo = pr.codigo_usuario
+
+--Nota fiscal
+SELECT p.codigo,
+u.nome Nome_Comprador,
+u.nomedeusuario Nome_Usuario,
+u.cpf,
+u.Telefone_pessoal ,
+u.Telefone_profissional,
+u.pais,
+u.estado ,
+u.cidade ,
+u.rua ,
+u.numero ,
+p2.nome Produto_Comprado, 
+p2.valor_unitario, 
+p.quantidade_produto, 
+p.quantidade_produto * p2.valor_unitario
 FROM pedido p
 INNER JOIN produto_pedido pp ON p.codigo = pp.codigo_pedido 
 INNER JOIN produto p2 ON p2.codigo = pp.codigo_produto
 INNER JOIN usuario u ON u.codigo = p.codigo_usuario
 WHERE p.codigo = 2;
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
